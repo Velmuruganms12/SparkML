@@ -27,6 +27,10 @@ val data = records.map { r =>
 	LabeledPoint(label, Vectors.dense(features))
 }
 
+data.cache
+val nbData= data.count
+//On doit avoir comme sortie nbData:long=7395
+
 //On a aussi des données négatives qu'on va remplacer par (0) pour pouvoir utiliser le modèle Naive Bayes  
 
 val nbData = records.map { r =>
