@@ -1,4 +1,4 @@
-########Manipuler les données##########
+########Manipulation les données##########
 // On veut travailler avec un fichier qui contient pas une entête
 //On va donc se déplacer dans le dossier qui contient les données et exécuter la commande suivante 
 // La sortie est un nouveau fichier train_noheader.tsv
@@ -11,6 +11,8 @@ sed 1d train.tsv > train_noheader.tsv
 val rawData = sc.textFile("train_noheader.tsv")
 val records = rawData.map(line => line.split("\t"))
 records.first
+
+
 ########Transformation des données##########
 //On doit importer les librairies nécessaires pour pouvoir utiliser les algorithmes de MLLib 
 //Les modèles de classification dans spark doivent implémenter LabeledPoint 
