@@ -40,3 +40,25 @@ val nbData = records.map { r =>
 	LabeledPoint(label, Vectors.dense(features))
 }
 
+
+############Créer le modèle de Regression logistique##############
+//// Modèle Regression logistique
+import org.apache.spark.mllib.classification.LogisticRegressionWithSGD
+import org.apache.spark.mllib.classification.SVMWithSGD
+import org.apache.spark.mllib.classification.NaiveBayes
+import org.apache.spark.mllib.tree.DecisionTree
+import org.apache.spark.mllib.tree.configuration.Algo
+import org.apache.spark.mllib.tree.impurity.Entropy
+val numIterations = 10
+val maxTreeDepth = 5
+val lrModel = LogisticRegressionWithSGD.train(data, numIterations)
+
+############Créer le modèle SVM##############
+val svmModel = SVMWithSGD.train(data, numIterations)
+
+############Créer le modèle Naive Bayes##############
+val nbModel = NaiveBayes.train(nbData)
+
+############Créer le modèle Arbre de decision##############
+val dtModel = DecisionTree.train(data, Algo.Classification, Entropy, maxTreeDepth)
+
