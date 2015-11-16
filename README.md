@@ -3,7 +3,7 @@ Ce code présente une démonstration pour la création d'un modèle de classific
 
 Le code est écrit en scala et une fois le shell Scala de Spark est lancé, on peut l'exécuter ligne par ligne et voir le résultat
 
-
+Référence : Machine Learning With Spark Nick Pentreath
 Ons Dridi 
 CETIC R&D Engineer 
 
