@@ -1,11 +1,6 @@
 # SparkML
-Ce code présente une démonstration pour la création d'un modèle de classification avec la librairie MLLib de Spark
+The code will be displayed to check the classification of the MLLib de Spark
 
-Le code est écrit en scala et une fois le shell Scala de Spark est lancé, on peut l'exécuter ligne par ligne et voir le résultat
+The code is displayed in the Scala and in the shell. The Scala de Spark is broken down into the executive version and displayed as the result
 
-Référence : Machine Learning With Spark Nick Pentreath
-
-Ons Dridi 
-CETIC R&D Engineer 
-
-Novembre 2015
+Référence: Machine Learning with Spark Nick Pentreath
